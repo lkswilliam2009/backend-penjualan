@@ -23,7 +23,7 @@ Go to the project directory
 Install dependencies
 
 ```bash
-  cd tech-test-backend-node/src
+  cd backend-penjualane/src
 ```
 
 ```bash
