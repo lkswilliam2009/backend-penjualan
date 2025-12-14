@@ -1,4 +1,5 @@
 import express from "express";
+import index from "./routes/index.route";
 import authRoutes from "./routes/auth.route";
 import codeRoutes from "./routes/code.route";
 import externalRoutes from "./routes/external.route";
@@ -10,6 +11,7 @@ import { errorHandler } from "./middlewares/errorHandler";
 const app = express();
 app.use(express.json());
 
+app.use(index);
 app.use("/auth", authRoutes);
 app.use("/code", codeRoutes);
 app.use("/external", externalRoutes);
